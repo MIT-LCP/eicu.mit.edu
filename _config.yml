@@ -1,0 +1,81 @@
+title: "eICU Collaborative Research Database"
+url: "https://eicu-crd.mit.edu"
+baseurl: ""
+lang: "en-us"
+
+theme: just-the-docs
+
+# Google Analytics
+ga_tracking: UA-87592301-5
+
+# Logo
+logo: "/assets/img/logo.png"
+
+# Heading anchor links
+heading_anchors: true
+
+# Footer
+footer_content: "Copyright &copy; Lab for Computational Physiology. eICU-CRD v2.0 documentation.<br><a href=\"https://accessibility.mit.edu/\">Accessibility</a>"
+
+# Aux links (top right)
+aux_links:
+  "GitHub":
+    - "https://github.com/mit-lcp/eicu-code"
+aux_links_new_tab: true
+
+# External nav links
+nav_external_links:
+  - title: "SchemaSpy"
+    url: "https://mit-lcp.github.io/eicu-schema-spy/"
+
+# Collections
+collections:
+  about:
+    output: true
+    permalink: /about/:slug/
+  eicutables:
+    output: true
+    permalink: /eicutables/:slug/
+  gettingstarted:
+    output: true
+    permalink: /gettingstarted/:slug/
+  community:
+    output: true
+    permalink: /community/:slug/
+  tutorials:
+    output: true
+    permalink: /tutorials/:slug/
+
+# Integrate collections into just-the-docs nav
+just_the_docs:
+  collections:
+    about:
+      name: About
+      nav_fold: true
+    gettingstarted:
+      name: Getting started
+      nav_fold: true
+    eicutables:
+      name: Tables in eICU-CRD
+      nav_fold: true
+    community:
+      name: Community
+      nav_fold: true
+    tutorials:
+      name: Tutorials
+      nav_fold: true
+
+# Default layout
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
