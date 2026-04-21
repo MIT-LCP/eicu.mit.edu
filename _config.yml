@@ -3,7 +3,7 @@ url: "https://eicu-crd.mit.edu"
 baseurl: ""
 lang: "en-us"
 
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
 # Google Analytics
 ga_tracking: UA-87592301-5
@@ -74,6 +74,7 @@ defaults:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 exclude:
   - Gemfile
